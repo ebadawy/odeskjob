@@ -1,0 +1,23 @@
+<table class="uk-table uk-table-striped">
+  <thead>
+  <tr>
+  <th>Listing Name</th>
+  <th>Active Citations</th>
+  <th>Pending Citations</th>
+  <th>Problems</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @listings.each do |listing| %>
+    <tr>
+    <td><%= link_to "#{listing.business_name}", listing %></td>
+    </tr>
+  <% end %>
+  </tbody>
+  </table>
+
+<div class="uk-grid">
+  <div class="uk-width-medium-1-2">
+    <%= link_to 'New Listing', new_listing_path, class: 'uk-button' %>
+  </div>
+</div>

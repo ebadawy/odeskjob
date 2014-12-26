@@ -1,0 +1,14 @@
+<%= form_for @listing, html: { multipart: true}  do |f| %>
+
+<%= f.label :business_name, 'Business Name' %>
+<%= f.text_field :business_name, :autofocus => true %>
+
+<%= f.label :business_number, 'Business Number' %>
+<%= f.text_field :business_number %>
+
+<%# Image Upload Logic Goes Here %>
+<%# Video Upload Logic Goes Here %>
+
+<%= f.submit %>
+
+<% end %>
