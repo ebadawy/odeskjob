@@ -4,3 +4,4 @@
 /tmp
 /config/application.yml
 /config/database.yml
+/db/schema.rb
